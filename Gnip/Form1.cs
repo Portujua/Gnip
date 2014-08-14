@@ -115,7 +115,11 @@ namespace Gnip
             else if (epr.isBrowsing())
                 this.Text += " {Browsing}";
             
-
+            // Flash window
+            if ((epr.isDownloading() || epr.isYoutubing() || epr.isBrowsing())
+                && !FlashWindow.ApplicationIsActivated())
+                FlashWindow.Start(this);
+                            
             // Obtenemos la ultima accion
             ListViewItem lastAction = epr.getLastAction();
             // Tiempo en segundos AHORA
@@ -138,20 +142,6 @@ namespace Gnip
                 listView1.Items.RemoveAt(0);
 
             timerPing.Start();
-        }
-
-        private void button_showHideHistory_Click(object sender, EventArgs e)
-        {
-            if (this.Size.Width == 475) // Entonces ocultar
-            {
-                this.Size = new Size(125, this.Size.Height);
-                button_showHideHistory.Text = "--->";
-            }
-            else // Mostrar
-            {
-                this.Size = new Size(475, this.Size.Height);
-                button_showHideHistory.Text = "<---";
-            }
-        }        
+        }    
     }
 }

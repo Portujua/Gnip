@@ -6,3 +6,4 @@ c:\users\eduardo lorenzo\documents\visual studio 2012\Projects\Gnip\Gnip\obj\Deb
 c:\users\eduardo lorenzo\documents\visual studio 2012\Projects\Gnip\Gnip\obj\Debug\Gnip.csproj.GenerateResource.Cache
 c:\users\eduardo lorenzo\documents\visual studio 2012\Projects\Gnip\Gnip\obj\Debug\Gnip.exe
 c:\users\eduardo lorenzo\documents\visual studio 2012\Projects\Gnip\Gnip\obj\Debug\Gnip.pdb
+C:\Users\Eduardo Lorenzo\Documents\Visual Studio 2012\Projects\Gnip\Gnip\obj\Debug\Gnip.csprojResolveAssemblyReference.cache

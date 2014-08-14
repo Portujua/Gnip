@@ -37,7 +37,7 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button_showHideHistory = new System.Windows.Forms.Button();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.SuspendLayout();
             // 
             // timerPing
@@ -94,9 +94,9 @@
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
-            this.listView1.Location = new System.Drawing.Point(122, 9);
+            this.listView1.Location = new System.Drawing.Point(77, 177);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(335, 130);
+            this.listView1.Size = new System.Drawing.Size(220, 130);
             this.listView1.TabIndex = 4;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -111,22 +111,19 @@
             this.columnHeader2.Text = "Tipo";
             this.columnHeader2.Width = 77;
             // 
-            // button_showHideHistory
+            // vScrollBar1
             // 
-            this.button_showHideHistory.Location = new System.Drawing.Point(70, 119);
-            this.button_showHideHistory.Name = "button_showHideHistory";
-            this.button_showHideHistory.Size = new System.Drawing.Size(34, 20);
-            this.button_showHideHistory.TabIndex = 5;
-            this.button_showHideHistory.Text = "--->";
-            this.button_showHideHistory.UseVisualStyleBackColor = true;
-            this.button_showHideHistory.Click += new System.EventHandler(this.button_showHideHistory_Click);
+            this.vScrollBar1.Location = new System.Drawing.Point(281, 177);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(16, 130);
+            this.vScrollBar1.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(117, 148);
-            this.Controls.Add(this.button_showHideHistory);
+            this.ClientSize = new System.Drawing.Size(488, 373);
+            this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label_alto);
             this.Controls.Add(this.label_medio);
@@ -151,7 +148,7 @@
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.Button button_showHideHistory;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }
 
